@@ -1,0 +1,39 @@
+
+------font family------- 
+
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap');
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+-----------------------------------------------
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{
+      font-family: "Pontano Sans", sans-serif;
+}
+
+ -----colors---------
+
+ :robot{
+
+    --body-bg : rgb(255, 255, 255);
+    --card-bg :rgb(235, 234, 234);
+    --white :rgb(255, 255, 255);
+    --black: rgb(0,0,0);
+    --font-color :rgb(243, 85, 37);
+    --font-grey-color :rgb(170, 170, 170);
+    --font-hv-color :rgb(243, 85, 37);
+     --icon-bg-color :rgb(243, 85, 37);
+     --bg-color : rgb(0,0,0);
+     --bg-hv-color:rgb(243, 85, 37);
+     --bg-color-span : rgb(251, 217, 207);
+     --pg-bg-color : rgb(0,0,0);
+     --pg-bghv-color : :rgb(243, 85, 37);
+     --socialmd-bg-cl :rgb(170, 170, 170);
+     --socialmd-bghv-cl :rgb(243, 85, 37);
+
+     -----------------------------------------------
+     // transition
+     --transion:all 0.5s ease,
+ }
+
+
