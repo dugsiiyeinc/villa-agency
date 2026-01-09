@@ -12,22 +12,57 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">VILLA</div>
+  
+   <!-- Top nav bar -->
 
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Properties</a>
-      <a href="property-details.html" class="active">Property Details</a>
-      <a href="contactUs.html">Contact Us</a>
-    </nav>
+        <section class="top-nav">
+            <div class="top-nav-right">
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#"> info@company.com</a>
+                </div>
+                <div class="map">
+                    <i class="fa-solid fa-map"></i>
+                    <span>Sunny Isles Beach, FL 33160</span>
+                </div>
+            </div>
+            <div class="top-nav-left">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+        <hr class="boderbtm">
 
-    <a href="#" class="btn-visit">
-      <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-      <span class="text">Schedule a visit</span>
-    </a>
-  </header>
+        <!-- Main nav bar -->
+        <nav class="main-nav ">
+            <div class="logo">
+                <h1>VILLA</h1>
+            </div>
+            <div class="humburger-menu">
+                <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
+                <i class="fa-solid fa-xmark" data-visible="false"></i>
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="/html/Properties.html"
+                        target="_self">Properties</a></li>
+                <li><a href="/html/property-details.html" target="_self">Property Details</a></li>
+                <li><a href="/html/contactUs.html" target="_self">Contact Us</a></li>
+                <div class="btn">
+                    <div class="btn-icon">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                    <button>Schedule a visit</button>
+                </div>
+            </ul>
+
+
+        </nav>
+
+<!-- ---------------------------------- -->
 
   <!-- HERO SECTION -->
   <section class="hero">
@@ -225,12 +260,41 @@
 
   </div>
 </section>
-<footer class="footer">
-    <p>
-      Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design: TemplateMo
-    </p>
-</footer>
+  <!-- ---------------------------------------- -->
+
+  <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-col">
+                    <h3>VILLA</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: info@company.com</p>
+                    <p>Phone: +252 61 2345678</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Villa Agency. All rights reserved.</p>
+            </div>
+        </footer>
 
 
+<script src="/js/index.js"></script>
 </body>
 </html>
