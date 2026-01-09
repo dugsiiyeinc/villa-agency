@@ -1,99 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Poppins", sans-serif;
     }
 
     body {
       background: #fff;
     }
 
-   .navbar {
-  height: 80px;
-  padding: 10px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  position: fixed;     
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;        
-}
-
-    .logo {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 40px;
-    }
-
-    .nav-links a {
+    a{
       text-decoration: none;
-      color: #000;
-      font-weight: 500;
-      position: relative;
-      padding-bottom: 5px;
-      transition: color 0.3s ease;
     }
 
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0%;
-      height: 2px;
-      background: #ff5a2c;
-      transition: width 0.3s ease;
+    li{
+      list-style: none;
     }
 
-    .nav-links a:hover {
-      color: #ff5a2c;
+     :root{
+    --body-bg: rgb(255, 255, 255);
+    --card-bg: rgb(235, 234, 234);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0,0,0);
+    --grey: rgb(223, 223, 223);
+
+    --font-color: rgb(243, 85, 37);
+    --font-grey-color: rgb(138, 138, 138);
+    --font-hv-color: rgb(243, 85, 37);
+
+    --icon-bg-color: rgb(243, 85, 37);
+    --bg-color: rgb(0,0,0);
+    --bg-hv-color: rgb(243, 85, 37);
+    --bg-color-span: rgb(251, 217, 207);
+
+    --pg-bg-color: rgb(0,0,0);
+    --pg-bghv-color: rgb(243, 85, 37);
+
+    --socialmd-bg-cl: rgb(170, 170, 170);
+    --socialmd-bghv-cl: rgb(243, 85, 37);
+}
+
+/* --------------------------------- */
+
+.top-nav{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5rem ;
+      
+        
+        .top-nav-right{
+            display: flex;
+           justify-content: center;
+            align-items: center;
+            gap: 3rem;
+          
+        }
+
+        .email , .map{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .map, .email {
+        i {
+            color: var(--font-color);
+            font-size: 1.3rem;
+        }
+        }
+
+        .email{
+            a{
+                color: var(--font-grey-color);
+                font-size: 0.875rem;
+            }
+        }
+
+        .map{
+            span{
+                color: var(--font-grey-color);
+                font-size: 0.875rem;
+            }
+        }
+
+        .top-nav-left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            a{
+                color: var(--white);
+                background-color: var(--socialmd-bg-cl);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                font-size: 0.875rem;
+                transition: all 0.3s ease;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover{
+                    background-color: var(--socialmd-bghv-cl);
+                }
+            }
+        }
+
+        
+}
+
+
+    /* boder -bottmo */
+    hr{
+        margin-top: 0.2rem;
+        border: none;
+        height: 1px;
+        background-color: var(--grey);
     }
 
-    .nav-links a:hover::after {
-      width: 100%;
+    /* ----------------------------------- */
+
+      /* main-nav */
+    .main-nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.4rem;
+        background-color: var(--icon-bg-color);
+         position: sticky;
+         top: 0;
+         width: 100%;
+         z-index: 1;
+        
+   
+
+       
+        .logo{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+       .humburger-menu {
+            display:none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 1.25rem;
+            right: 2rem;
+            width: 40px;
+            height: 40px;
+            z-index: 1;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--white);
+            
+        }
+        .nav-links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            position: relative;
+            top: -100;
+
+            a{
+                color: var(--white);
+                font-size: 1rem;
+                font-weight: 500;
+                padding: 0.5rem 0;
+                transition: all 1s ease;
+
+                &:hover{
+                    color: var(--black);
+                }
+            }
+
+            .btn{
+                padding: 0.5rem 1rem;
+                /* background-color: var(--bg-color); */
+                color: var(--white);
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                position: relative;
+                 
+                .btn-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    font-size: 1.1rem;
+                    left: 3px;
+                    top: 15%;
+                    background-color: var(--white);
+                    width: 25px;
+                    height: 25px;
+                    padding:22px;
+                    border-radius: 50%;
+                    color: var(--icon-bg-color);
+                    cursor: pointer;
+                   
+                   
+                }
+
+                button{
+                    background-color:var(--black);
+                    border: none;
+                    color: var(--white);
+                    font-size: 1rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                   padding: 10px 40px;
+                   border-radius: 25px;
+                   text-align: center;
+                    transition: all 0.3s ease;
+                  
+                   &:hover{
+                       color: var(--icon-bg-color);
+                   }
+                }
+                
+            }
+            
+        }
+        .mobile-menu{
+            display: none;
+        }
+        
     }
+   
 
-   .btn-visit {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 26px 10px 10px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 40px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
+   
+ 
 
-.btn-visit .icon {
-  width: 36px;
-  height: 36px;
-  background: #ff5a2c;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-}
+   
 
-.btn-visit:hover {
-  background: #ff5a2c;
-}
-
-.btn-visit:hover .icon {
-  background: #111;
-}
-
+   
 
 .hero {
       position: relative;
@@ -286,3 +434,74 @@
   text-align: center;
 }
 
+
+
+@media (max-width: 790px){
+   .top-nav{
+       display: none;
+        gap: 0.5rem;
+    }
+      
+    .main-nav{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+         z-index: 1;
+         position: fixed;
+    
+      
+
+
+        .humburger-menu {
+            display: flex;
+        }
+        .nav-links{
+            position: absolute;
+         
+            width: 85%;
+            /* height: 100vh; */
+            background-color: var(--icon-bg-color);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            transition: all 0.3s ease;
+            padding: 20px;
+            margin-top: 8px;
+            border-radius: 1rem;
+           
+
+            a{
+                font-size: 1.5rem;
+            }
+
+            .btn{
+                padding: 0.7rem 1.5rem;
+
+                .btn-icon {
+                    font-size: 1.3rem;
+                    width:0px;
+                    height:0px;
+                    left: 5px;
+                    top: 20%;
+                   
+                    
+                    button{
+                       padding: 1px;
+                       font-size: 1rem;
+                    }
+                }
+
+            }
+          
+        }
+        .mobile-menu{
+            display: flex;
+    
+        }
+    
+   
+
+    }
+}
