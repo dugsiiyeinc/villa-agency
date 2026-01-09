@@ -8,7 +8,7 @@ hamburger.addEventListener("click", () => {
   if (isOpen) {
     // XIR
     navLinks.classList.remove("open");
-    navLinks.style.top = "-100%";
+    navLinks.style.top = "-600%";
 
     icons[0].style.display = "block"; // bars
     icons[1].style.display = "none";  // close
@@ -21,3 +21,23 @@ hamburger.addEventListener("click", () => {
     icons[1].style.display = "block"; // close
   }
 });
+
+
+
+const questions = document.querySelectorAll(".faq-question");
+
+  questions.forEach(question => {
+    question.addEventListener("click", () => {
+      const item = question.parentElement;
+
+      // xir kuwa kale
+      document.querySelectorAll(".faq-item").forEach(faq => {
+        if (faq !== item) {
+          faq.classList.remove("active");
+        }
+      });
+
+      // fur ama xir kan la riixay
+      item.classList.toggle("active");
+    });
+  });  
