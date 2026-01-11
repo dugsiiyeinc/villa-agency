@@ -22,6 +22,7 @@ img{
     width: 100%;
 }
 
+
 :root{
     --body-bg: rgb(255, 255, 255);
     --card-bg: rgb(235, 234, 234);
@@ -249,7 +250,7 @@ img{
 
     .hero-section{
         height: 90dvh;
-        background: url("https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/banner-01.jpg") center/cover no-repeat;
+        background: url("/images/image.png") center/cover no-repeat;
          width: 100%;
         position: relative;
         object-fit: cover;
@@ -931,6 +932,7 @@ img{
         padding: 0 1rem;
          z-index: 1;
          position: fixed;
+         top: 0;
     
       
 
@@ -978,10 +980,7 @@ img{
             }
           
         }
-        .mobile-menu{
-            display: flex;
-    
-        }
+     
     
    
 
