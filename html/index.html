@@ -1,101 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+            integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- Top nav bar -->
 
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-
-  <body>
-    <!-- Top nav bar -->
-    <section class="top-nav">
-      <div class="top-nav-right">
-        <div class="email">
-          <i class="fa-solid fa-envelope"></i>
-          <a href="#"> info@company.com</a>
-        </div>
-        <div class="map">
-          <i class="fa-solid fa-map"></i>
-          <span>Sunny Isles Beach, FL 33160</span>
-        </div>
-      </div>
-      <div class="top-nav-left">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-    </section>
-
-    <hr class="boderbtm" />
-
-    <!-- Main nav bar -->
-    <nav class="main-nav container">
-      <div class="logo">
-        <h1>VILLA</h1>
-      </div>
-
-      <div class="humburger-menu" aria-label="Toggle menu">
-        <i class="fa-solid fa-bars-staggered"></i>
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="/html/Properties.html" target="_self">Properties</a></li>
-        <li><a href="/html/property-details.html" target="_self">Property Details</a></li>
-        <li><a href="/html/contactUs.html" target="_self">Contact Us</a></li>
-
-        <!-- ✅ CHANGED: div -> li (valid inside ul) -->
-        <li class="nav-btn">
-          <div class="btn">
-            <div class="btn-icon">
-              <i class="fa-solid fa-calendar"></i>
+        <section class="top-nav">
+            <div class="top-nav-right">
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#"> info@company.com</a>
+                </div>
+                <div class="map">
+                    <i class="fa-solid fa-map"></i>
+                    <span>Sunny Isles Beach, FL 33160</span>
+                </div>
             </div>
-            <button>Schedule a visit</button>
-          </div>
-        </li>
-      </ul>
-    </nav>
+            <div class="top-nav-left">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+        <hr class="boderbtm">
 
-    <!-- hero -section -->
-    <section class="hero-section container">
-      <div class="hero-section-content">
-        <!-- ✅ CHANGED: fixed wrong closing tag -->
-        <p class="hero-title">Toronto, <em>Canada</em></p>
-        <h2 class="title">HURRY! GET THE BEST VILLA FOR YOU</h2>
-      </div>
+        <!-- Main nav bar -->
+        <nav class="main-nav container">
+            <div class="logo">
+                <h1>VILLA</h1>
+            </div>
+            <div class="humburger-menu">
+                <i class="fa-solid fa-bars-staggered" ></i>
+                <i class="fa-solid fa-xmark" ></i>
 
-      <div class="arrows">
-        <button class="prev"><</button>
-        <button class="next">></button>
-      </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="/html/Properties.html"
+                        target="_self">Properties</a></li>
+                <li><a href="/html/property-details.html" target="_self">Property Details</a></li>
+                <li><a href="/html/contactUs.html" target="_self">Contact Us</a></li>
+                <div class="btn">
+                    <div class="btn-icon">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                    <button>Schedule a visit</button>
+                </div>
+            </ul>
 
-      <div class="dots">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-    </section>
 
-    <!-- (rest of your HTML is unchanged) -->
+        </nav>
 
-    <script src="/js/index.js"></script>
-  </body>
+        <!-- hero -section -->
+
+        <section class="hero-section container">
+            <div class="hero-section-content">
+                <p class="hero-title">Toronto, <em>Canada</em></span>
+                <h2 class="title">HURRY! GET THE BEST VILLA FOR YOU</h2>
+            </div>
+
+            <div class="arrows">
+                <button class="prev"><</button>
+                <button class="next">></button>
+            </div>
+
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </section>
+
+        <section class="Feature container">
+            <div class="feature-image">
+                <img
+                    src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/featured.jpg"
+                    alt>
+
+                <div class="feaure-image-icon">
+                    <img
+                        src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/featured-icon.png"
+                        alt>
+                </div>
+            </div>
+
+            <div class="feaure-content-center">
+                <h6>| Featured</h6>
+                <h2>Best Appartment & Sea view</h2>
+
+                <div class="faq">
+
+                    <div class="faq-item active">
+                        <h3 class="faq-question">Best useful links ?</h3>
+                        <div class="faq-answer">
+                            <p>
+                                Get the best villa website template in HTML CSS
+                                and Bootstrap for your business.
+                                TemplateMo provides you the best free CSS
+                                templates in the world.
+                                Please tell your friends about it.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">How does this work ?</h3>
+                        <div class="faq-answer">
+                            <p>
+                                This section works like an accordion. Click the
+                                title to open or close the content.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Why is Villa Agency the best
+                            ?</h3>
+                        <div class="faq-answer">
+                            <p>
+                                Villa Agency offers modern design, clean code
+                                and responsive layouts.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="feaure-content-right">
+                <div class="feaure-right-content">
+                    <i class="ri-layout-2-line"></i>
+                    <div class="content">
+                        <h4>250 m2</h4>
+                        <span>Total Flat Space</span>
+                    </div>
+                </div>
+                <div class="feaure-right-content">
+                    <i class="ri-file-text-line"></i>
+                    <div class="content">
+                        <h4>Contract</h4>
+                        <span>Contract Ready</span>
+                    </div>
+                </div>
+                <div class="feaure-right-content">
+                    <i class="ri-wallet-3-line"></i>
+                    <div class="content">
+                        <h4>Payment</h4>
+                        <span>Payment Process</span>
+                    </div>
+                </div>
+                <div class="feaure-right-content">
+                    <i class="ri-shield-check-line"></i>
+                    <div class="content">
+                        <h4>Safety</h4>
+                        <span>24/7 Under Contro</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="Video-View">
+            <div class="video-view-content  container">
+                <div class="video-title">
+
+                    <h6>| Video View</h6>
+                    <h2>Get Closer View & <br>Different Feeling</h2>
+                </div>
+
+                <div class="video-play">
+                    <div class="play-content">
+                        <div class="paly">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-view-footer">
+            <div class=" video-view-footers container">
+                <div class="video-view-footer-content">
+                    <h2>34</h2>
+                    <p> Buildings <br>Finished Now</p>
+                    <div class="circle">1</div>
+                </div>
+                <div class="video-view-footer-content">
+                    <h2>12</h2>
+                    <p> Years <br>Experience</p>
+                    <div class="circle">2</div>
+                </div>
+                <div class="video-view-footer-content">
+                    <h2>24</h2>
+                    <p> Awwards <br>Won 2023</p>
+                    <div class="circle">3</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Best-Deal container ">
+
+            <div class="Deal">
+                <div class="deal-left">
+                    <h6>| Best Deal</h6>
+                    <h2>Find Your Best Deal <br> Right Now!</h2>
+                </div>
+                <div class="deal-right">
+                    <a href="#" class="active">Appartment</a>
+                    <a href="#">Villa House</a>
+                    <a href="#">PentHouse</a>
+                </div>
+            </div>
+
+            <div class="grids">
+                <div class="grids-content">
+                    <div class="grid">
+                        <span>Total Flat Space</span>
+                        <h4>250 m2</h4>
+                    </div>
+                    <div class="grid">
+                        <span>Floor number</span>
+                        <h4>26th</h4>
+                    </div>
+                    <div class="grid">
+                        <span>Number of rooms</span>
+                        <h4>4</h4>
+                    </div>
+                    <div class="grid">
+                        <span>Parking Available</span>
+                        <h4>Yes</h4>
+                    </div>
+                    <div class="grid">
+                        <span>Payment Process</span>
+                        <h4>Bank</h4>
+                    </div>
+                </div>
+
+                <div class="grid-image">
+                    <img src="/images/deal-01.jpg" alt>
+                </div>
+
+                <div class="grid-info">
+                    <h4>Extra Info About Property</h4>
+                    <p class="grid-info-title">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, do eiusmod tempor pack
+                        incididunt ut labore et dolore magna aliqua quised ipsum
+                        suspendisse.</p>
+                    <p>When you need free CSS templates, you can simply type
+                        TemplateMo in any search engine website. In addition,
+                        you can type TemplateMo Portfolio, TemplateMo One Page
+                        Layouts, etc.</p>
+
+                    <div class="btn">
+                        <div class="btn-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+                        <button>Schedule a visit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cards -->
+
+        <section class="cards container">
+
+            <div class="card-header">
+                <h6>| Properties</h6>
+                <h2>We Provide The Best Property You Like</h2>
+            </div>
+            <!-- --------------------------------------- -->
+
+            <div class="card-grid">
+
+                <div class="card">
+                    <div class="card-img">
+                        <a href="#"><img
+                                src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-01.jpg"></a>
+                    </div>
+
+                    <div class="card-title">
+                        <span>Luxury Villa</span>
+                        <h2>$2.264.000</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <a href="#">
+                            <h2>18 New Street Miami, OR 97219</h2>
+                        </a>
+
+                        <div class="list-1">
+                            <ul>
+                                <li>Bedrooms: <strong>8</strong></li>
+                                <li>Bathrooms: <strong>3</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="list-2">
+                            <ul>
+                                <li>Area: <strong>125m2</strong></li>
+                                <li>Floor: <strong>25th</strong></li>
+                                <li>Parking: <strong>6 spots</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="card-btn">
+                        <a href="#">Schedule a visit</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <a href="#"><img
+                                src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-02.jpg"></a>
+                    </div>
+
+                    <div class="card-title">
+                        <span>Luxury Villa</span>
+                        <h2>$2.264.000</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <a href="#">
+                            <h2>18 New Street Miami, OR 97219</h2>
+                        </a>
+
+                        <div class="list-1">
+                            <ul>
+                                <li>Bedrooms: <strong>8</strong></li>
+                                <li>Bathrooms: <strong>3</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="list-2">
+                            <ul>
+                                <li>Area: <strong>125m2</strong></li>
+                                <li>Floor: <strong>25th</strong></li>
+                                <li>Parking: <strong>6 spots</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="card-btn">
+                        <a href="#">Schedule a visit</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <a href="#"><img
+                                src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-03.jpg"></a>
+                    </div>
+
+                    <div class="card-title">
+                        <span>Luxury Villa</span>
+                        <h2>$1.460.000</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <a href="#">
+                            <h2>18 New Street Miami, OR 97219</h2>
+                        </a>
+
+                        <div class="list-1">
+                            <ul>
+                                <li>Bedrooms: <strong>8</strong></li>
+                                <li>Bathrooms: <strong>3</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="list-2">
+                            <ul>
+                                <li>Area: <strong>125m2</strong></li>
+                                <li>Floor: <strong>25th</strong></li>
+                                <li>Parking: <strong>6 spots</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="card-btn">
+                        <a href="#">Schedule a visit</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <a href="#"><img
+                                src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-04.jpg"></a>
+                    </div>
+
+                    <div class="card-title">
+                        <span>Modern Condo</span>
+                        <h2>$584.500</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <a href="#">
+                            <h2>18 New Street Miami, OR 97219</h2>
+                        </a>
+
+                        <div class="list-1">
+                            <ul>
+                                <li>Bedrooms: <strong>8</strong></li>
+                                <li>Bathrooms: <strong>3</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="list-2">
+                            <ul>
+                                <li>Area: <strong>125m2</strong></li>
+                                <li>Floor: <strong>25th</strong></li>
+                                <li>Parking: <strong>6 spots</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="card-btn">
+                        <a href="#">Schedule a visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <a href="#"><img
+                                src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-05.jpg"></a>
+                    </div>
+
+                    <div class="card-title">
+                        <span>Penthouse</span>
+                        <h2>$925.600</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <a href="#">
+                            <h2>18 New Street Miami, OR 97219</h2>
+                        </a>
+
+                        <div class="list-1">
+                            <ul>
+                                <li>Bedrooms: <strong>8</strong></li>
+                                <li>Bathrooms: <strong>3</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="list-2">
+                            <ul>
+                                <li>Area: <strong>125m2</strong></li>
+                                <li>Floor: <strong>25th</strong></li>
+                                <li>Parking: <strong>6 spots</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="card-btn">
+                        <a href="#">Schedule a visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <a href="#"><img
+                                src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-06.jpg"></a>
+                    </div>
+
+                    <div class="card-title">
+                        <span>Apartment</span>
+                        <h2>$450.000</h2>
+                    </div>
+
+                    <div class="card-content">
+                        <a href="#">
+                            <h2>18 New Street Miami, OR 97219</h2>
+                        </a>
+
+                        <div class="list-1">
+                            <ul>
+                                <li>Bedrooms: <strong>8</strong></li>
+                                <li>Bathrooms: <strong>3</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="list-2">
+                            <ul>
+                                <li>Area: <strong>125m2</strong></li>
+                                <li>Floor: <strong>25th</strong></li>
+                                <li>Parking: <strong>6 spots</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="card-btn">
+                        <a href="#">Schedule a visit</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ----------------------------------- -->
+        </section>
+
+        <footer class="footer container">
+            <div class="footer-container">
+
+                <div class="footer-col">
+                    <h3>VILLA</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: info@company.com</p>
+                    <p>Phone: +252 61 2345678</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Villa Agency. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="/js/index.js"></script>
+    </body>
 </html>
