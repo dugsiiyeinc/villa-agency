@@ -8,9 +8,9 @@ hamburger.addEventListener("click", () => {
   if (isOpen) {
     // XIR
     navLinks.classList.remove("open");
-    navLinks.style.top = "-600%";
+    navLinks.style.top = "-800%";
 
-    icons[0].style.display = "block"; // bars
+    icons[0].style.display = "flex"; // bars
     icons[1].style.display = "none";  // close
   } else {
     // FUR
@@ -18,7 +18,7 @@ hamburger.addEventListener("click", () => {
     navLinks.style.top = "0";
 
     icons[0].style.display = "none";  // bars
-    icons[1].style.display = "block"; // close
+    icons[1].style.display = "flex"; // close
   }
 });
 

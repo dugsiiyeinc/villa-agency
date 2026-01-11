@@ -620,6 +620,75 @@ input { display: none; }
    RESPONSIVE FIX (ADD AT END)
    ============================ */
 
+   @media (max-width: 790px){
+   .top-nav{
+       display: none;
+        gap: 0.5rem;
+    }
+      
+    .main-nav{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+         z-index: 1;
+         position: fixed;
+    
+      
+
+
+        .humburger-menu {
+            display: flex;
+        }
+        .nav-links{
+            position: absolute;
+         
+            width: 85%;
+            /* height: 100vh; */
+            background-color: var(--icon-bg-color);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            transition: all 0.3s ease;
+            padding: 20px;
+            margin-top: 8px;
+            border-radius: 1rem;
+           
+
+            a{
+                font-size: 1.5rem;
+            }
+
+            .btn{
+                padding: 0.7rem 1.5rem;
+
+                .btn-icon {
+                    font-size: 1.3rem;
+                    width:0px;
+                    height:0px;
+                    left: 5px;
+                    top: 20%;
+                   
+                    
+                    button{
+                       padding: 1px;
+                       font-size: 1rem;
+                    }
+                }
+
+            }
+          
+        }
+        .mobile-menu{
+            display: flex;
+    
+        }
+    
+   
+
+    }
+
 img {
   max-width: 100%;
   height: auto;
