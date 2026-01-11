@@ -616,73 +616,190 @@ input { display: none; }
   /* ------------------------------------------ */
 
 
-@media (max-width: 390px){
-   .top-nav{
-       display: none;
-        gap: 0.5rem;
-    }
-      
-    .main-nav{
-        padding: 0.5rem;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 1rem;
-         z-index: 1;
-         position: fixed;
-    
-      
+/* ============================
+   RESPONSIVE FIX (ADD AT END)
+   ============================ */
 
-
-        .humburger-menu {
-            display: flex;
-        }
-        .nav-links{
-            position: absolute;
-         
-            width: 85%;
-            /* height: 100vh; */
-            background-color: var(--icon-bg-color);
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            transition: all 0.3s ease;
-            padding: 20px;
-            margin-top: 8px;
-            border-radius: 1rem;
-           
-
-            a{
-                font-size: 1.5rem;
-            }
-
-            .btn{
-                padding: 0.7rem 1.5rem;
-
-                .btn-icon {
-                    font-size: 1.3rem;
-                    width:0px;
-                    height:0px;
-                    left: 5px;
-                    top: 20%;
-                   
-                    
-                    button{
-                       padding: 1px;
-                       font-size: 1rem;
-                    }
-                }
-
-            }
-          
-        }
-        .mobile-menu{
-            display: flex;
-    
-        }
-    
-   
-
-    }
-
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+/* keep layouts inside screen */
+.property-section,
+.property-details,
+.deal {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* avoid fixed negative margins */
+.property-details {
+  margin: 30px auto 80px;
+  max-width: 900px;
+}
+
+/* make the top area responsive */
+.property-section {
+  grid-template-columns: 2fr 1fr;
+}
+
+/* Deal section: allow wrapping */
+.content {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* flexible widths instead of fixed */
+.info {
+  width: 100%;
+  max-width: 320px;
+}
+
+.image {
+  width: 100%;
+  max-width: 520px;
+}
+
+.image img {
+  width: 100%;
+  max-width: 520px;
+}
+
+.details {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+/* ---------------------------
+   TABLET (<= 992px)
+   --------------------------- */
+@media (max-width: 992px) {
+  .hero {
+    height: 320px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .property-section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 40px auto;
+  }
+
+  .property-info {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tabs label {
+    margin-left: 0;
+  }
+
+  .content {
+    gap: 24px;
+    margin-top: 30px;
+  }
+
+  .info,
+  .image,
+  .details {
+    max-width: 100%;
+  }
+
+  .details {
+    padding-left: 0;
+  }
+
+  .title h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+/* ---------------------------
+   MOBILE (<= 576px)
+   --------------------------- */
+@media (max-width: 576px) {
+  .hero {
+    height: 260px;
+  }
+
+  .breadcrumb {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .property-info {
+    padding: 18px;
+  }
+
+  .info-item {
+    gap: 14px;
+    padding: 16px 0;
+  }
+
+  .info-item h3 {
+    font-size: 18px;
+  }
+
+  .info-item p {
+    font-size: 13px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .property-details h2 {
+    font-size: 20px;
+  }
+
+  .deal {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .title h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .tabs label {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-visit2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px 16px;
+  }
+}
+
