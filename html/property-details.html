@@ -3,68 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Single Property</title>
 
-<link rel="stylesheet" href="/css/propertrydetails.css">
- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+  <link rel="stylesheet" href="/css/propertrydetails.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
+
 <body>
+  <!-- Top nav bar -->
+  <section class="top-nav">
+    <div class="top-nav-right">
+      <div class="email">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="#"> info@company.com</a>
+      </div>
+      <div class="map">
+        <i class="fa-solid fa-map"></i>
+        <span>Sunny Isles Beach, FL 33160</span>
+      </div>
+    </div>
+    <div class="top-nav-left">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </section>
 
-  
-   <!-- Top nav bar -->
+  <hr class="boderbtm" />
 
-        <section class="top-nav">
-            <div class="top-nav-right">
-                <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="#"> info@company.com</a>
-                </div>
-                <div class="map">
-                    <i class="fa-solid fa-map"></i>
-                    <span>Sunny Isles Beach, FL 33160</span>
-                </div>
-            </div>
-            <div class="top-nav-left">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </section>
-        <hr class="boderbtm">
+  <!-- Main nav bar -->
+  <nav class="main-nav">
+    <div class="logo">
+      <h1>VILLA</h1>
+    </div>
 
-        <!-- Main nav bar -->
-        <nav class="main-nav ">
-            <div class="logo">
-                <h1>VILLA</h1>
-            </div>
-            <div class="humburger-menu">
-                <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
-                <i class="fa-solid fa-xmark" data-visible="false"></i>
+    <div class="humburger-menu" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars-staggered"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </div>
 
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="/html/Properties.html"
-                        target="_self">Properties</a></li>
-                <li><a href="/html/property-details.html" target="_self">Property Details</a></li>
-                <li><a href="/html/contactUs.html" target="_self">Contact Us</a></li>
-                <div class="btn">
-                    <div class="btn-icon">
-                        <i class="fa-solid fa-calendar"></i>
-                    </div>
-                    <button>Schedule a visit</button>
-                </div>
-            </ul>
+    <ul class="nav-links">
+      <li><a href="/html/index.html">Home</a></li>
+      <li><a href="/html/Properties.html" target="_self">Properties</a></li>
+      <li><a href="/html/property-details.html" target="_self">Property Details</a></li>
+      <li><a href="/html/contactUs.html" target="_self">Contact Us</a></li>
 
-
-        </nav>
-
-<!-- ---------------------------------- -->
+      <!-- ✅ CHANGED: div -> li (valid inside ul) -->
+      <li class="nav-btn">
+        <div class="btn">
+          <div class="btn-icon">
+            <i class="fa-solid fa-calendar"></i>
+          </div>
+          <button>Schedule a visit</button>
+        </div>
+      </li>
+    </ul>
+  </nav>
 
   <!-- HERO SECTION -->
   <section class="hero">
@@ -73,230 +71,186 @@
       <h1>SINGLE PROPERTY</h1>
     </div>
   </section>
+
   <section class="property-section">
+    <div class="property-image">
+      <img src="../image/single-property.jpg" alt="Property Image" />
+    </div>
 
-  <!-- LEFT IMAGE -->
-  <div class="property-image">
-    <img src="../image/single-property.jpg" alt="Property Image" />
-  
-  </div>
+    <div class="property-info">
+      <div class="info-item">
+        <img src="../image/info-icon-01.png" alt="" />
+        <div>
+          <h3>450 m2</h3>
+          <p>Total Flat Space</p>
+        </div>
+      </div>
 
-  <!-- RIGHT INFO CARD -->
-  <div class="property-info">
+      <div class="info-item">
+        <img src="../image/info-icon-02.png" alt="" />
+        <div>
+          <h3>Contract</h3>
+          <p>Contract Ready</p>
+        </div>
+      </div>
 
-    <div class="info-item">
-      <img src="../image/info-icon-01.png" alt="">
-      <div>
-        <h3>450 m2</h3>
-        <p>Total Flat Space</p>
+      <div class="info-item">
+        <img src="../image/info-icon-03.png" alt="" />
+        <div>
+          <h3>Payment</h3>
+          <p>Payment Process</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <img src="../image/info-icon-04.png" alt="" />
+        <div>
+          <h3>Safety</h3>
+          <p>24/7 Under Control</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="property-details">
+    <span class="badge">Apparment</span>
+    <h2>24 New Street Miami, OR 24560</h2>
+    <hr />
+
+    <p>
+      Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website.
+      TemplateMo provides you the <a href="#">best free CSS templates</a> in the world.
+      Please tell your friends about it. Thank you.
+    </p>
+
+    <p>
+      When you look for free CSS templates, you can simply type TemplateMo in any search engine website.
+      In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate Layouts, etc.
+    </p>
+
+    <div class="accordion">
+      <details open>
+        <summary>Best useful links ?</summary>
+        <p>
+          Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor...
+        </p>
+      </details>
+
+      <details>
+        <summary>How does this work ?</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </details>
+
+      <details>
+        <summary>Why is Villa the best ?</summary>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation...</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="deal">
+    <input type="radio" name="deal" id="apt" checked />
+    <input type="radio" name="deal" id="villa" />
+    <input type="radio" name="deal" id="pent" />
+
+    <div class="header">
+      <div class="title">
+        <span>| BEST DEAL</span>
+        <h1>Find Your Best Deal<br />Right Now!</h1>
+      </div>
+
+      <div class="tabs">
+        <label for="apt">Apartment</label>
+        <label for="villa">Villa House</label>
+        <label for="pent">Penthouse</label>
       </div>
     </div>
 
-    <div class="info-item">
-      <img src="../image/info-icon-02.png" alt="">
-      <div>
-        <h3>Contract</h3>
-        <p>Contract Ready</p>
+    <div class="content">
+      <div class="info">
+        <div class="apt">
+          <p><span>Total Flat Space</span><b>540 m2</b></p>
+          <p><span>Floor number</span><b>3</b></p>
+          <p><span>Number of rooms</span><b>8</b></p>
+          <p><span>Parking Available</span><b>Yes</b></p>
+          <p><span>Payment Process</span><b>Bank</b></p>
+        </div>
+
+        <div class="villa">
+          <p><span>Total Space</span><b>250 m2</b></p>
+          <p><span>Floors</span><b>26th</b></p>
+          <p><span>Rooms</span><b>5</b></p>
+          <p><span>Parking</span><b>Yes</b></p>
+          <p><span>Payment</span><b>Bank</b></p>
+        </div>
+
+        <div class="pent">
+          <p><span>Total Space</span><b>320 m2</b></p>
+          <p><span>Floor</span><b>34th</b></p>
+          <p><span>Rooms</span><b>6</b></p>
+          <p><span>Parking</span><b>Yes</b></p>
+          <p><span>Payment</span><b>Bank</b></p>
+        </div>
+      </div>
+
+      <div class="image">
+        <img class="apt" src="../image/deal-01.jpg" alt="" />
+        <img class="villa" src="../image/deal-02.jpg" alt="" />
+        <img class="pent" src="../image/deal-03.jpg" alt="" />
+      </div>
+
+      <div class="details">
+        <div class="apt">
+          <h4>All Info About Apartment</h4>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+
+        <div class="villa">
+          <h4>Detail Info About New Villa</h4>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+
+        <div class="pent">
+          <h4>Extra Info About Penthouse</h4>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+
+        <button class="btn-visit2">
+          <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+          <span class="text">Schedule a visit</span>
+        </button>
       </div>
     </div>
-
-    <div class="info-item">
-      <img src="../image/info-icon-03.png" alt="">
-      <div>
-        <h3>Payment</h3>
-        <p>Payment Process</p>
-      </div>
-    </div>
-
-    <div class="info-item">
-      <img src="../image/info-icon-04.png" alt="">
-      <div>
-        <h3>Safety</h3>
-        <p>24/7 Under Control</p>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-<section class="property-details">
-
-  <span class="badge">Apparment</span>
-
-  <h2>24 New Street Miami, OR 24560</h2>
-
-  <hr>
-
-  <p>
-    Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website.
-    TemplateMo provides you the <a href="#">best free CSS templates</a> in the world.
-    Please tell your friends about it. Thank you.
-    Cloud bread kogi bitters pitchfork shoreditch tumblr yr succulents
-    single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.
-  </p>
-
-  <p>
-    When you look for free CSS templates, you can simply type TemplateMo in any search engine website.
-    In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate Layouts, etc.
-    Master cleanse +1 intelligentsia swag post-ironic,
-    slow-carb chambray knausgaard PBR&B DSA poutine neutra cardigan hoodie pop-up.
-  </p>
-
-  <!-- FAQ / ACCORDION -->
-  <div class="accordion">
-
-    <details open>
-      <summary>Best useful links ?</summary>
-      <p>
-        Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor
-        kinfolk tonx seitan crucifix 3 wolf moon bicycle rights keffiyeh snackwave wolf same vice,
-        chillwave vexillologist incididunt ut labore consectetur <span>adipiscing</span> elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </details>
-
-    <details>
-      <summary>How does this work ?</summary>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua.
-      </p>
-    </details>
-
-    <details>
-      <summary>Why is Villa the best ?</summary>
-      <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-    </details>
-
-  </div>
-
-</section>
-
-<section class="deal">
-
-  <!-- radio buttons -->
-  <input type="radio" name="deal" id="apt" checked>
-  <input type="radio" name="deal" id="villa">
-  <input type="radio" name="deal" id="pent">
-
-  <!-- header -->
-  <div class="header">
-    <div class="title">
-      <span>| BEST DEAL</span>
-      <h1>Find Your Best Deal<br>Right Now!</h1>
-    </div>
-
-    <div class="tabs">
-      <label for="apt">Apartment</label>
-      <label for="villa">Villa House</label>
-      <label for="pent">Penthouse</label>
-    </div>
-  </div>
-
-  <!-- content -->
-  <div class="content">
-
-    <!-- LEFT INFO CARD -->
-    <div class="info">
-      <div class="apt">
-        <p><span>Total Flat Space</span><b>540 m2</b></p>
-        <p><span>Floor number</span><b>3</b></p>
-        <p><span>Number of rooms</span><b>8</b></p>
-        <p><span>Parking Available</span><b>Yes</b></p>
-        <p><span>Payment Process</span><b>Bank</b></p>
-      </div>
-
-      <div class="villa">
-        <p><span>Total Space</span><b>250 m2</b></p>
-        <p><span>Floors</span><b>26th</b></p>
-        <p><span>Rooms</span><b>5</b></p>
-        <p><span>Parking</span><b>Yes</b></p>
-        <p><span>Payment</span><b>Bank</b></p>
-      </div>
-
-      <div class="pent">
-        <p><span>Total Space</span><b>320 m2</b></p>
-        <p><span>Floor</span><b>34th</b></p>
-        <p><span>Rooms</span><b>6</b></p>
-        <p><span>Parking</span><b>Yes</b></p>
-        <p><span>Payment</span><b>Bank</b></p>
-      </div>
-    </div>
-
-    <!-- IMAGE -->
-    <div class="image">
-      <img class="apt" src="../image/deal-01.jpg">
-      <img class="villa" src="../image/deal-02.jpg">
-      <img class="pent" src="../image/deal-03.jpg">
-    </div>
-
-    <!-- RIGHT TEXT -->
-    <div class="details">
-      <div class="apt">
-        <h4>All Info About Apartment</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.
-        Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
-      </div>
-
-      <div class="villa">
-        <h4>Detail Info About New Villa</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.
-        Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
-      </div>
-
-      <div class="pent">
-        <h4>Extra Info About Penthouse</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut Kinfolk tonx seitan crucifix 3 wolf moon bicycle rights keffiyeh snackwave wolf same vice, chillwave vexillologistlabore et dolore magna aliqua quised ipsum suspendisse.Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
-      </div>
-
-      <button class="btn-visit2">
-        
-      <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-      <span class="text">Schedule a visit</span>
-    
-      </button>
-    </div>
-
-  </div>
-</section>
-  <!-- ---------------------------------------- -->
+  </section>
 
   <footer class="footer">
-            <div class="footer-container">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>VILLA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <br />adipisicing elit.</p>
+      </div>
 
-                <div class="footer-col">
-                    <h3>VILLA</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.
-                    </p>
-                </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Properties</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
 
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Properties</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: info@company.com</p>
+        <p>Phone: +252 61 2345678</p>
+      </div>
+    </div>
 
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <p>Email: info@company.com</p>
-                    <p>Phone: +252 61 2345678</p>
-                </div>
+    <div class="footer-bottom">
+      <p>© 2026 Villa Agency. All rights reserved.</p>
+    </div>
+  </footer>
 
-            </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 Villa Agency. All rights reserved.</p>
-            </div>
-        </footer>
-
-
-<script src="/js/index.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 </html>

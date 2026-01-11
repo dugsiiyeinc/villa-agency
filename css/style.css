@@ -1130,4 +1130,51 @@ img{
 
 
 }
+/* ===========================
+   ✅ MOBILE MENU FIX (PATCH)
+   Add this at the END of style.css
+=========================== */
+
+.humburger-menu i.fa-xmark {
+  display: none; /* ✅ hide X by default */
+}
+
+@media (max-width: 790px) {
+  .main-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  /* ✅ menu hidden by default */
+  .main-nav .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;           /* under the navbar */
+    right: 1rem;
+    width: 85%;
+    background: var(--icon-bg-color);
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+    border-radius: 1rem;
+    margin-top: 8px;
+    z-index: 9999;
+  }
+
+  /* ✅ show when open */
+  .main-nav .nav-links.open {
+    display: flex;
+  }
+
+  /* ✅ keep button li clean */
+  .main-nav .nav-links .nav-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
     

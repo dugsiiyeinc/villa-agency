@@ -1,43 +1,37 @@
 const hamburger = document.querySelector(".humburger-menu");
 const navLinks = document.querySelector(".main-nav .nav-links");
-const icons = hamburger.querySelectorAll("i");
+const icons = hamburger.querySelectorAll("i"); // [0]=bars, [1]=x
+
+// ✅ set initial state (important)
+icons[0].style.display = "block";
+icons[1].style.display = "none";
+navLinks.classList.remove("open");
 
 hamburger.addEventListener("click", () => {
   const isOpen = navLinks.classList.contains("open");
 
   if (isOpen) {
-    // XIR
     navLinks.classList.remove("open");
-    navLinks.style.top = "-800%";
-
-    icons[0].style.display = "flex"; // bars
-    icons[1].style.display = "none";  // close
+    icons[0].style.display = "block"; // bars
+    icons[1].style.display = "none";  // x
   } else {
-    // FUR
     navLinks.classList.add("open");
-    navLinks.style.top = "0";
-
     icons[0].style.display = "none";  // bars
-    icons[1].style.display = "flex"; // close
+    icons[1].style.display = "block"; // x
   }
 });
 
-
-
+// FAQ accordion (unchanged)
 const questions = document.querySelectorAll(".faq-question");
 
-  questions.forEach(question => {
-    question.addEventListener("click", () => {
-      const item = question.parentElement;
+questions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const item = question.parentElement;
 
-      // xir kuwa kale
-      document.querySelectorAll(".faq-item").forEach(faq => {
-        if (faq !== item) {
-          faq.classList.remove("active");
-        }
-      });
-
-      // fur ama xir kan la riixay
-      item.classList.toggle("active");
+    document.querySelectorAll(".faq-item").forEach((faq) => {
+      if (faq !== item) faq.classList.remove("active");
     });
-  });  
+
+    item.classList.toggle("active");
+  });
+});
